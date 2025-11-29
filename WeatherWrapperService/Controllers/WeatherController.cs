@@ -1,11 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
+using WeatherWrapperService.Models;
 using WeatherWrapperService.Services.Interfaces;
 
-public class HomeController : Controller
+public class WeatherController : Controller
 {
     private readonly IWeatherService _weatherService;
 
-    public HomeController(IWeatherService weatherService)
+    public WeatherController(IWeatherService weatherService)
     {
         _weatherService = weatherService;
     }
